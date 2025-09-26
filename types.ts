@@ -1,16 +1,4 @@
-export interface Destination {
-  id: number;
-  name: string;
-  description: string;
-  imageUrl: string;
-  coords: {
-    cx: string;
-    cy: string;
-  };
-}
-
-// FIX: Added missing Itinerary types to resolve compilation errors.
-export interface ItineraryActivity {
+export interface Activity {
   time: string;
   description: string;
 }
@@ -18,7 +6,15 @@ export interface ItineraryActivity {
 export interface ItineraryDay {
   day: number;
   title: string;
-  activities: ItineraryActivity[];
+  activities: Activity[];
 }
 
 export type ItineraryPlan = ItineraryDay[];
+
+export interface Destination {
+  id: number;
+  name: string;
+  description: string;
+  imageUrl: string;
+  coords: { cx: string; cy: string };
+}

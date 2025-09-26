@@ -1,27 +1,20 @@
 import React from 'react';
-import { TwitterIcon, InstagramIcon, FacebookIcon } from './icons/Icons';
-
 
 const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="bg-black border-t border-gray-800 py-8">
-      <div className="container mx-auto px-4 text-center text-gray-500">
-        <h3 className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-green-300 bg-clip-text text-transparent mb-4">
-          NgomaEvents
-        </h3>
-        <p>Travel intelligently. Explore passionately.</p>
-        <div className="flex justify-center space-x-6 mt-6">
-          <a href="#" className="hover:text-white transition-all transform hover:scale-125 hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.7)] duration-300">
-            <TwitterIcon size={6} />
-          </a>
-          <a href="#" className="hover:text-white transition-all transform hover:scale-125 hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.7)] duration-300">
-            <InstagramIcon size={6} />
-          </a>
-          <a href="#" className="hover:text-white transition-all transform hover:scale-125 hover:drop-shadow-[0_0_8px_rgba(16,185,129,0.7)] duration-300">
-            <FacebookIcon size={6} />
-          </a>
+    <footer className="bg-gray-900/50 text-gray-400 py-12">
+      <div className="container mx-auto px-4 text-center">
+        <p className="text-2xl font-bold bg-gradient-to-r from-emerald-400 to-white bg-clip-text text-transparent mb-4">
+            VoyageAI
+        </p>
+        <div className="flex justify-center space-x-6 mb-6">
+          <a href="#destinations" className="hover:text-emerald-400 transition-colors">Destinations</a>
+          <a href="#planner" className="hover:text-emerald-400 transition-colors">AI Planner</a>
+          <a href="#stories" className="hover:text-emerald-400 transition-colors">Stories</a>
+          <a href="#explore" className="hover:text-emerald-400 transition-colors">Explore</a>
         </div>
-         <p className="mt-8 text-sm">&copy; {new Date().getFullYear()} NgomaEvents. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} VoyageAI. All rights reserved.</p>
+        <p className="text-sm mt-2">Crafting unforgettable journeys with the power of AI.</p>
       </div>
     </footer>
   );
